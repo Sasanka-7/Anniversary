@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Anniversary My Love</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background stars + moon -->
+  <canvas id="constellation"></canvas>
+  <div class="moon"></div>
+
+  <!-- Header -->
+  <h1 class="glow-text">Happy Anniversary My Love 💕</h1>
+
+  <!-- Slideshow -->
+  <div class="slideshow-container">
+    <div class="slide fade">
+      <img src="images/ourimg3.jpeg" alt="Memory 1">
+    </div>
+    <div class="slide fade">
+      <img src="images/ourimg 1.jpeg" alt="Memory 2">
+    </div>
+    <div class="slide fade">
+      <img src="images/ourimg2.jpeg" alt="Memory 3">
+    </div>
+    <div class="slide fade">
+      <img src="images/ourimg4.jpeg" alt="Memory 4">
+    </div>
+    <div class="slide fade">
+      <img src="images/ourimg5.jpeg" alt="Memory 5">
+    </div>
+    <div class="slide fade">
+      <img src="images/ourimg6.jpeg" alt="Memory 6">
+    </div>
+     <div class="slide fade">
+      <img src="images/ourimg7.jpeg" alt="Memory 7">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+  </div>
+
+  <!-- Love Note Button -->
+  <button class="note-button" onclick="openNote()">💌 Open Love Note</button>
+
+  <!-- Paper-style Love Letter -->
+  <div id="love-note" class="love-note">
+    <div class="note-paper">
+      <h2>My Dearest Love ❤️</h2>
+      <p>
+        From the moment we met, my life has been filled with happiness.  
+        Every memory we made together is a treasure in my heart.  
+        On this special day, I just want you to know...  
+        I will always love you, today, tomorrow, and forever. 💕
+      </p>
+      <p class="signature">Yours forever, <br> 💖</p>
+      <button class="close-note" onclick="closeNote()">Close</button>
+    </div>
+  </div>
+
+  <!-- Floating Hearts -->
+  <div id="heart-container"></div>
+
+ <!-- Background Music -->
+<audio id="bg-music" src="audio/oursong.mp3.mp3" loop></audio>
+<button id="music-btn">🎵 Play / Pause</button>
+<script src="script.js"></script>
+
+
+</body>
+</html>

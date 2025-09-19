@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #0d0d2b;
+  font-family: 'Arial', sans-serif;
+  overflow-x: hidden;
+  color: white;
+  text-align: center;
+}
+
+/* Constellation canvas */
+#constellation {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: -2;
+  background: #0d0d2b;
+}
+
+/* Moon */
+.moon {
+  position: absolute;
+  top: 8%; right: 12%;
+  width: 160px; height: 160px;
+  border-radius: 50%;
+  background: #ffec8b;
+  box-shadow: 0 0 60px 20px rgba(255,255,200,0.6);
+  z-index: -1;
+}
+
+/* Glowing Title */
+.glow-text {
+  font-size: 3.5em;
+  margin-top: 30px;
+  color: #fff;
+  text-shadow: 0 0 10px #ff4da6, 0 0 20px #ff1a75, 0 0 40px #ff0080;
+}
+
+/* Slideshow - bigger space */
+
+.slideshow-container {
+  max-width: 500px;       /* 👈 slideshow size control */
+  margin: 40px auto;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(255,255,255,0.3);
+  background: rgba(0,0,0,0.3);
+}
+
+.slides {
+  display: none;
+}
+
+.slideshow-container img {
+  width: 100%;
+  height: auto;          /* Maintain aspect ratio */
+  object-fit: contain;   /* No cropping */
+  border-radius: 15px;
+}
+
+
+/* Button */
+.note-button {
+  background: #ff4da6;
+  border: none;
+  padding: 14px 30px;
+  color: white;
+  font-size: 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 25px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+/* Love Note Overlay */
+.love-note {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.7);
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Paper design */
+.note-paper {
+  background: #fff8dc;
+  padding: 40px;
+  border: 2px solid #d4af37;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  max-width: 500px;
+  text-align: left;
+  font-family: 'Georgia', serif;
+  color: #333;
+  line-height: 1.6;
+}
+.note-paper h2 {
+  text-align: center;
+  margin-top: 0;
+  color: #d6336c;
+}
+.signature {
+  text-align: right;
+  font-style: italic;
+}
+.close-note {
+  display: block;
+  margin: 20px auto 0;
+  background: #d6336c;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* Floating Hearts */
+#heart-container {
+  position: fixed;
+  width: 100%; height: 100%;
+  top: 0; left: 0;
+  pointer-events: none;
+  z-index: 10;
+}
+.heart {
+  position: absolute;
+  color: pink;
+  font-size: 24px;
+  animation: float 8s linear infinite;
+}
+@keyframes float {
+  0% { transform: translateY(100vh) scale(1); opacity: 1; }
+  100% { transform: translateY(-10vh) scale(0.5); opacity: 0; }
+}
+/* ---- baki ka poora CSS yahan hoga ---- */
+
+/* Music button style (last mein) */
+#music-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 2px solid white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  backdrop-filter: blur(5px);
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+#music-btn:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
